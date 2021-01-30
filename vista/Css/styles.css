@@ -1,0 +1,537 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.clearfix{
+    float: none;
+    clear: both;
+}
+/*EStrellas*/
+.val-fieldset {
+    width:100px;
+    border:none;
+    font-weight:bold;
+    font-size:12px;
+    }
+    .valoracion {
+    width: 100px;
+    height: 21px;
+    display: block;
+    background:url(http://lh5.googleusercontent.com/-Sp-iHFztZdc/UVD89O9oM1I/AAAAAAAAEU0/Xh-FBDaWyJY/s000/estrellas.png) 0 0 no-repeat;
+    }
+    .val-0 {background-position: -100px -0;}
+    .val-5 {background-position: -81px -21px;}
+    .val-10 {background-position: -81px 0;}
+    .val-15 {background-position: -61px -21px;}
+    .val-20 {background-position: -60px 0;}
+    .val-25 {background-position: -40px -21px;}
+    .val-30 {background-position: -40px 0;}
+    .val-35 {background-position: -21px -21px;}
+    .val-40 {background-position: -21px 0;} 
+    .val-45 {background-position: 0 -21px;}
+    .val-50 {background-position: 0 0;}
+.ilogo{
+    display: block;
+    margin: 3px;
+}
+
+.category{
+    position: relative;
+bottom: 11px;
+left: 4px;
+}
+
+
+header{
+	width: 100%;
+}
+
+.navegacion{
+	width: 1000px;
+	margin: 30px auto;
+    background: #313D52;
+  
+}
+
+.navegacion ul{
+	list-style: none;
+}
+
+.menu > li{
+	position: relative;
+	display: inline-block;
+}
+
+.menu > li > a{
+	display: block;
+	padding: 15px 20px;
+ 
+    color: white;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+
+.menu li a:hover{
+	color: #CE7D35;
+	transition: all .3s;
+}
+
+/* Submenu*/
+
+.submenu{
+	position: absolute;
+	background: #333333;
+	width: 120%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+}
+
+.submenu li a{
+	display: block;
+	padding: 15px;
+	color: #fff;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
+
+
+/*Barra buscar*/
+#input-search{
+    position: relative;
+    top: 5px;
+    width: 250px;
+    height: 40px;
+    font-size: 15px;
+    text-indent: 10px;
+    border-radius: 3px;
+}
+.cate{
+    position: relative;
+    bottom: 11px;
+    left: 5px;
+}
+
+/*Menu Desplegable*/
+#nav > ul > li > ul{
+    display: none;
+    position: absolute;
+    width: 190px;
+    box-shadow: 0px 2px 2px gray ;
+    z-index: 1;
+}
+
+#nav > ul > li:hover > ul{
+display: block;
+}
+#nav a {
+    color: white;
+}
+
+#nav > ul > li:hover > ul > li{
+    background: #f2f1f0;
+    border-bottom: 1px solid #d6d6d6;
+    padding: 8px;
+    line-height: 25px;
+   font-size: 13px; 
+    }
+
+    #nav > ul > li:hover > ul > li a{
+    /*color: #666666;*/
+    color: blueviolet;
+    }
+
+    #nav > ul > li:hover > ul > li:hover{
+     box-shadow: 0px 0px 6px #ccc inset ;
+        /*background: darkmagenta;   */
+    }
+
+/*Banner*/
+*{
+    margin: 0;
+    padding: 0;
+}
+.slide{
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+    
+}
+
+.slide ul{
+display: flex;
+padding: 0;
+width: 700%;
+animation: cambio 20s infinite alternate ease-in;
+}
+.slide li{
+    list-style:none;
+width: 100%;
+}
+.slide img{
+    width: 100%;
+}
+@keyframes cambio{
+0%  {margin-left: 0;}
+20% {margin-left: 0;}
+
+25%  {margin-left: -100%;}
+45%  {margin-left: -100%;}
+
+50%  {margin-left: -200%;}
+70%  {margin-left: -200%;}
+
+75%  {margin-left: -300%;}
+100%  {margin-left: -300%;}
+
+100%  {margin-left: -400%;}
+125%  {margin-left: -400%;}
+
+125%  {margin-left: -500%;}
+150%  {margin-left: -500%;}
+
+150%  {margin-left: -600%;}
+175%  {margin-left: -600%;}
+}
+
+
+#banner{
+    margin-top:65px; 
+    position: relative;
+
+}
+
+#banner .contenedor{
+    position: absolute;
+    color #fff;
+    top: 130px;
+    left: 230px;
+    color: white;
+    background: rgba(51,51,51,0.8);
+    border-radius: 10px;
+}
+
+h2{
+font-size: 3.4em;
+}
+
+.descripcion{
+    font-size: 1.8em;
+}
+
+
+
+.prof h3{
+position: relative;
+color: white;
+font-size: 2em;
+background: darkgoldenrod;
+bottom:280px;
+left: 700px;
+width:400px ;
+height: 50px;
+border-radius: 7px;
+}
+
+.infprof{
+    position: relative;
+    color: white;
+    font-size: 1.4em;
+    background: darkgoldenrod;
+    bottom:262px;
+    left: 750px;
+    width:600px ;
+    height: 150px;
+    border-radius: 7px;
+}
+
+.prof img{
+position: relative;
+    left: 200px;
+}
+
+.desc h3{
+    position: relative;
+    color: white;
+    font-size: 2em;
+    background: darkgoldenrod;
+    bottom:150px;
+    left: 100px;
+    width:400px ;
+    height: 80px;
+    border-radius: 7px;
+    }
+
+    .infdesc{
+        position: relative;
+        color: white;
+        font-size: 1.4em;
+        background: darkgoldenrod;
+        bottom: 140px;
+        left: 150px;
+        width:600px ;
+        height: 100px;
+        border-radius: 7px;
+    }
+
+.desc img{
+position: relative;
+bottom: 350px;
+left: 800px;
+border-radius: 7px;
+    }
+.aprender{
+    position: relative;
+        color: white;
+        font-size: 1.4em;
+        background: darkgoldenrod;
+        bottom: 200px;
+        height: 200px;
+        border-radius: 7px;
+        left: 750px;
+        width:600px ;
+    }
+
+.aprender img{
+    border-radius: 7px;
+    position: relative;
+    right: 600px;
+    bottom: 200px;
+}
+
+.mejorescur{
+    position: relative;
+        color: white;
+        font-size: 1.4em;
+        background: darkgoldenrod;
+        bottom: 50px;
+        height: 200px;
+        border-radius: 7px;
+        left: 150px;
+        width:600px ;
+    }
+
+.mejorescur img{
+        position: relative;
+        left: 700px;
+        bottom: 230px;
+    }
+
+
+.ver{
+    color: white;
+    padding: .3em;
+    padding-left: 1em;
+    padding-right: 1em;
+    background:rgb(113, 91, 207);
+    font-size: 2em;
+    border-radius: 3em;
+    position: relative;
+    top: 70px;
+    left: 35px;
+    text-decoration: none;
+}
+.ver:hover{
+    background: orange;
+    color:white;
+}
+
+
+
+
+
+
+/*Footer*/
+
+footer{
+    width: 100%;
+    background: #242529;
+    color: white;   
+    
+}
+
+.container-footer-all{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+}
+
+.container-body{
+    display: flex;
+    justify-content: space-between;
+}
+
+.colum1{
+    max-width: 400px;
+}
+
+.colum1 h1{
+    font-size: 22px;
+}
+
+.colum1 p{
+    font-size: 14px;
+    color: #C7C7C7;
+    margin-top: 20px;
+}
+
+.colum2{
+    max-width: 400px;
+    
+}
+
+.colum2 h1{
+    font-size: 22px;
+}
+
+.row{
+    margin-top: 20px;
+    display: flex;
+}
+
+.row img{
+    width: 36px;
+    height: 36px;
+}
+
+.row label{
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #C7C7C7;
+}
+
+.colum3{
+    max-width: 400px;
+}
+
+.colum3 h1{
+    font-size: 22px;
+}
+
+.row2{
+    margin-top: 20px;
+    display: flex;
+}
+
+.row2 img{
+    width: 36px;
+    height: 36px;
+}
+
+.row2 label{
+    margin-top: 10px;
+    margin-left: 20px;
+    max-width: 140px;
+}
+
+.container-footer{
+    width: 100%;  
+	/*background: #101010;*/
+	background: #242529;
+}
+
+.footer{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;  
+    padding: 20px;
+}
+
+.copyright{
+    color: #C7C7C7;
+}
+
+.copyright a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.information a{
+    text-decoration: none;
+    color: #C7C7C7;
+}
+
+
+@media screen and (max-width: 1100px){
+    
+    .container-body{
+        flex-wrap: wrap;
+    }
+    
+    .colum1{
+        max-width: 100%;
+    }
+    
+    .colum2,
+    .colum3{
+        margin-top: 40px;
+    }
+}
+
+
+
+/*Cursos Gratis Tarjetas*/
+
+
+.containertar{
+    width: 100%;
+    max-width: 1200px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.containertar .card{
+    width: 330px;
+    height: 400px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.containertar .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.containertar .card img{
+    width: 330px;
+    height: 220px;
+}
+
+
+.containertar .card h4{
+    font-weight: 600;
+}
+
+.containertart .card p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.containertar .card a {
+    font-weight: 500;
+    text-decoration: none;
+    color:white;
+    background: slateblue;
+    padding: 4px;
+    border-radius: 3px;
+
+}
